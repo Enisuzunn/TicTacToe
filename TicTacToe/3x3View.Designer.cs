@@ -1,6 +1,7 @@
-﻿namespace TicTacToe
+﻿
+namespace TicTacToe
 {
-    partial class Form1
+    partial class _3x3View
     {
         /// <summary>
         ///  Required designer variable.
@@ -145,6 +146,8 @@
             // 
             // label1
             // 
+            label1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label1.ForeColor = Color.FromArgb(192, 0, 0);
             label1.Location = new Point(35, 18);
             label1.Name = "label1";
             label1.Size = new Size(93, 17);
@@ -153,6 +156,8 @@
             // 
             // label2
             // 
+            label2.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 162);
+            label2.ForeColor = Color.Green;
             label2.Location = new Point(356, 18);
             label2.Name = "label2";
             label2.Size = new Size(93, 17);
@@ -161,13 +166,15 @@
             // 
             // button10
             // 
+            button10.BackColor = Color.Yellow;
+            button10.FlatStyle = FlatStyle.Flat;
             button10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 162);
             button10.Location = new Point(177, 422);
             button10.Name = "button10";
             button10.Size = new Size(95, 27);
             button10.TabIndex = 16;
             button10.Text = "Restart Game";
-            button10.UseVisualStyleBackColor = true;
+            button10.UseVisualStyleBackColor = false;
             button10.Click += restartgame;
             // 
             // gameTimer
@@ -175,7 +182,7 @@
             gameTimer.Interval = 1000;
             gameTimer.Tick += CPUtasima;
             // 
-            // Form1
+            // _3x3View
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -192,10 +199,11 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form1";
+            Name = "_3x3View";
             Text = "Form1";
             ResumeLayout(false);
         }
+
 
         #endregion
 

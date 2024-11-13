@@ -1,6 +1,6 @@
 namespace TicTacToe
 {
-    public partial class Form1 : Form
+    public partial class _3x3View : Form
     {
         public enum Player
         {
@@ -12,7 +12,7 @@ namespace TicTacToe
         int kazananPc = 0;
         List<Button> list;
 
-        public Form1()
+        public _3x3View()
         {
             InitializeComponent();
             RestartGame();
