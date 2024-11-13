@@ -107,6 +107,11 @@ namespace TicTacToe
             }
 
         }
+
+        private void _5x5View_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

@@ -179,7 +179,7 @@ namespace TicTacToe
             // 
             // gameTimer
             // 
-            gameTimer.Interval = 1000;
+            gameTimer.Interval = 500;
             gameTimer.Tick += CPUtasima;
             // 
             // _3x3View
@@ -201,6 +201,7 @@ namespace TicTacToe
             Controls.Add(button1);
             Name = "_3x3View";
             Text = "Form1";
+            FormClosed += _3x3View_FormClosed;
             ResumeLayout(false);
         }
 

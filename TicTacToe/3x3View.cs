@@ -4,7 +4,7 @@ namespace TicTacToe
     {
         public enum Player
         {
-            X , O
+            X, O
         }
         Player currentPlayer;
         Random random = new Random();
@@ -20,8 +20,8 @@ namespace TicTacToe
 
         private void CPUtasima(object sender, EventArgs e)
         {
-            if (list.Count >0)
-            { 
+            if (list.Count > 0)
+            {
                 int index = random.Next(list.Count);
                 list[index].Enabled = false;
                 currentPlayer = Player.O;
@@ -56,8 +56,8 @@ namespace TicTacToe
                 && button6.Text == "X" || button7.Text == "X" && button8.Text == "X" && button9.Text == "X" || button1.Text == "X"
                 && button4.Text == "X" && button7.Text == "X" || button2.Text == "X" && button5.Text == "X" && button8.Text == "X"
                 || button3.Text == "X" && button6.Text == "X" && button9.Text == "X" || button1.Text == "X" && button5.Text == "X"
-                && button9.Text == "X" || button3.Text == "X" && button5.Text == "X" && button7.Text == "X") 
-            { 
+                && button9.Text == "X" || button3.Text == "X" && button5.Text == "X" && button7.Text == "X")
+            {
                 gameTimer.Stop();
                 MessageBox.Show("Player Wins");
                 kazananOyuncu++;
@@ -76,17 +76,24 @@ namespace TicTacToe
                 label2.Text = "Pc Wins: " + kazananPc;
                 RestartGame();
             }
+            
         }
         private void RestartGame()
         {
-            list = new List<Button>{ button1,button2,button3,button4,button5,button6,button7,button8,button9};
-            foreach (Button button in list) {
+            list = new List<Button> { button1, button2, button3, button4, button5, button6, button7, button8, button9 };
+            foreach (Button button in list)
+            {
                 button.Enabled = true;
                 button.Text = "?";
                 button.BackColor = DefaultBackColor;
 
             }
-            
+
+        }
+
+        private void _3x3View_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

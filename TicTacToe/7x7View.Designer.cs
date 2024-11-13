@@ -658,7 +658,7 @@
             // 
             // gameTimer
             // 
-            gameTimer.Interval = 1000;
+            gameTimer.Interval = 500;
             gameTimer.Tick += CPUtasima;
             // 
             // _7x7View
@@ -720,6 +720,7 @@
             Controls.Add(button1);
             Name = "_7x7View";
             Text = "_7x7View";
+            FormClosed += _7x7View_FormClosed;
             ResumeLayout(false);
         }
 

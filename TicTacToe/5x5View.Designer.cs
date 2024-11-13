@@ -359,7 +359,7 @@
             // 
             // gameTimer
             // 
-            gameTimer.Interval = 1000;
+            gameTimer.Interval = 500;
             gameTimer.Tick += CPUtasima;
             // 
             // button10
@@ -408,6 +408,7 @@
             Controls.Add(button1);
             Name = "_5x5View";
             Text = "_5x5View";
+            FormClosed += _5x5View_FormClosed;
             ResumeLayout(false);
         }
 
